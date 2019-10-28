@@ -1,0 +1,14 @@
+.image-source {
+  width: 20%;
+}
+.image-detail p {
+  text-align: right;
+}
+
+.button-icon {
+  height: 150px;
+}
+
+.highlight{
+  border: 2px gold;
+}
