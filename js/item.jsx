@@ -34,13 +34,13 @@ class Item extends React.Component {
             <button type="button" className="btn btn-primary" data-toggle="modal" data-target={"#" + this.props.object_name + "Modal"}>
             </button> */ }
 
-            <img id={`button-icon-${this.props.object_name}`}className="button-icon" src={"static/items/"+this.props.object_name+".png"} 
+            <img id={`button-icon-${this.props.object_name}`} className="button-icon" src={"static/items/"+this.props.object_name+".png"} 
             data-toggle="modal" data-target={"#" + this.props.object_name + "Modal"}
             onMouseEnter={this.highlight()} onMouseLeave={this.removeHighlight()}/>
 
 
-            <div className="modal fade" id={this.props.object_name + "Modal"} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" role="document">
+            <div className="modal fade bd-example-modal-lg" id={this.props.object_name + "Modal"} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg" role="document">
                 <div className="modal-content">
                 <div className="modal-header">
                     <h5 className="modal-title" id={`${this.props.object_name}-label`} >{this.props.object_name} Detail</h5>
@@ -50,11 +50,7 @@ class Item extends React.Component {
                 </div>
                 <div className="modal-body">
                     <Image title= {this.props.title} artist={this.props.artist} year={this.props.year} 
-                    filename={this.props.filename} analysis={this.props.analysis}/>,
-                </div>
-                <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" className="btn btn-primary">Save changes</button>
+                    filename={this.props.filename} analysis={this.props.analysis}/>
                 </div>
                 </div>
             </div>

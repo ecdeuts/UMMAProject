@@ -1,8 +1,9 @@
 .image-source {
-  width: 10%;
+  height: 10%;
+  width: auto;
 }
 .image-detail p {
-  text-align: right;
+  text-align: left;
 }
 
 .button-icon {
@@ -11,4 +12,20 @@
 
 .highlight{
   border: 2px gold;
+}
+
+.home {
+  padding: 2em;
+}
+
+.button-icon {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+p {
+  padding-left: 2em;
+}
+h2 {
+  text-align: center;
 }

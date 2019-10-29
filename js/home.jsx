@@ -7,14 +7,7 @@ class Home extends React.Component {
         super(props);
         this.state = {
             items: [
-                {
-                    object_name: "Window",
-                    title: "Winged Ones",
-                    artist: "Joanne Leonard",
-                    year: 1987,
-                    filename: "Domestic/WingedOnes.jpg",
-                    analysis: "We see a child, gazing longingly into nature outside the window.  This piece agrees with the school of thought that states that a child's place is in nature, and that the domestic only holds a child back from that natural expression.  This is reminiscent of the story of Alice in Wonderland, where Alice's body modifications cause her to literally outgrow the white rabbit's home.",
-                },
+                
                 {
                     object_name: "Birdcage",
                     title: "Birds at Home",
@@ -22,6 +15,14 @@ class Home extends React.Component {
                     year: 2007,
                     filename: "Domestic/Birds_at_home.jpg",
                     analysis: "We see 5 children, sitting around a dinning room table with distant looks in their eyes.  These children are the titular \" birds \", which we can draw a connection to given that there are 5 children and 5 broken eggs around them.  This artist draws inspiration from Peter Pan by J.M. Barrie, in which all children were birds originally.  In Peter Pan, this serves to separate children from adults as a completely different species within nature, and only given time in the domestic do the children become humans and then adults.  This portrait also suposes that a child's natural need is to be within nature, given that all of the children in this portrait seem bored and distracted.  Rather than the home being a safe haven, these children are trapped by the domestic and it chafes against their wild nature." ,
+                },
+                {
+                    object_name: "Window",
+                    title: "Winged Ones",
+                    artist: "Joanne Leonard",
+                    year: 1987,
+                    filename: "Domestic/WingedOnes.jpg",
+                    analysis: "We see a child, gazing longingly into nature outside the window.  This piece agrees with the school of thought that states that a child's place is in nature, and that the domestic only holds a child back from that natural expression.  This is reminiscent of the story of Alice in Wonderland, where Alice's body modifications cause her to literally outgrow the white rabbit's home.",
                 },
                 {
                     object_name: "Photograph",
@@ -96,7 +97,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="home">
+            <div className="home row">
                 {this.state.items.map((item) => {
                     console.log(item); // eslint-disable-line no-console
                     return (<Item object_name={item.object_name} title={item.title} 
